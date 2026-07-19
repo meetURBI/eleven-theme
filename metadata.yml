@@ -6,5 +6,26 @@ metadata:
     - weg
     - toolbar
 styles:
-  "@seelen/fancy-toolbar": !include styles/toolbar.scss
+# SELEEN UI MAIN WIDGETS
+# ---
   "@seelen/weg": !include styles/dock.scss
+  "@seelen/fancy-toolbar": !include styles/toolbar.scss
+  "@seelen/context-menu": !include styles/context.scss
+  #"@seelen/tooltip": !include styles/context.scss
+# ---
+# SELEEN UI POPUP WIDGETS
+  "@seelen/network-popup": !include styles/devices.scss
+  #"@seelen/bluetooth-popup": !include styles/devices.scss
+  "@seelen/media-popup": !include styles/media.scss
+#  "@seelen/calendar-popup": !include styles/calendar.scss
+#  "@seelen/power-menu": !include styles/power-menu.scss
+#  "@seelen/task-switcher": !include styles/task-switcher.scss
+#  "@seelen/wallpaper-manager": !include styles/wallpaper-manager.css
+#  "@seelen/system-tray": !include styles/tray-menu.scss
+#  "@seelen/quick-settings": !include styles/quick-settings.scss
+#  "@seelen/workspaces-viewer": !include styles/workspaces-viewer.scss
+#  "@seelen/apps-menu": !include styles/apps-menu.scss
+#  "@seelen/keyboard-selector": !include styles/keyboard-selector.scss
+#  "@seelen/user-menu": !include styles/user-menu.scss
+#  "@seelen/notifications": !include styles/notifications.scss
+#  "@seelen/flyouts": !include styles/flyouts.css
