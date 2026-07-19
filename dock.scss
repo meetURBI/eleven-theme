@@ -1,0 +1,41 @@
+@import "shared";
+@import "buttons";
+
+.taskbar {
+    display: flex; //Changes directions so dock feels more like a compact list of currently opened apps ~URB!
+
+    background: unset; //Removes background colour ~URB!
+
+    &.horizontal {
+
+        flex-direction: row; justify-content: flex-start; //Sets horizontal direction to always start from the left corner ~URB!
+
+    }
+
+    &.vertical {
+
+        flex-direction: column; justify-content: flex-end; //Sets vertical direction to always start from the bottom corner ~URB!
+
+    }
+
+}
+
+.weg-item {
+
+    padding: var(--spacing-xs); //Sets small spacing to icons ~URB!
+
+    background: unset; border-radius: unset; box-shadow: unset; //Removes background colour, border-radius & box-shadow ~URB!
+
+    .weg-item-icon {
+
+        filter: drop-shadow(0 0 .2rem oklch(from var(--color-gray-25) l c h / 1)); //Added slight drop-shadow to icons ~URB!
+
+        &:hover {
+
+            filter: brightness(1.5) saturate(1.5); //Increased brightness & saturation when hovering over app icon ~URB!
+
+        }
+
+    }
+
+}
