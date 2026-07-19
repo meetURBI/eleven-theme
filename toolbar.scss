@@ -1,9 +1,0 @@
-@import "shared";
-@import "buttons";
-
-.ft-bar {
-
-    @include fakrylic; //Injects custom made acrylic material Fake-Acrylic™ to match the rest of Windows 11 look ~URB!
-    border-top: hidden; border-left: hidden; border-right: hidden; //Renders only bottom border of Fake-Acrylic™
-
-}
