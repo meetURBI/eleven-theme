@@ -11,3 +11,12 @@ button[data-skin="transparent"] {
     }
 
 }
+
+input[type="range"][data-skin="flat"] {
+
+  height: .6rem; //Lowers the height of track line ~URB!
+
+  border-radius: calc(var(--spacing-2xs) + .4rem);
+  background: oklch(from var(--color-gray-200) l c h / 0.8); //Sets the track background into lighter ~URB!
+
+}

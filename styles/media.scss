@@ -24,7 +24,8 @@
 
 .media-device {
 
-    width: calc(50% - var(--spacing-xs) /2);
+    width: calc(100% - var(--spacing-xs) /2); //If there is one media device width is set to 100% of popup window ~URB!
+    min-width: calc(50% - var(--spacing-xs) /2); //If there are more media devices width is set to 50% of popup window ~URB!
 
     padding: calc(var(--spacing-xs) / 2.5);
 

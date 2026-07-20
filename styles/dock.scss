@@ -2,19 +2,30 @@
 @import "buttons";
 
 .taskbar {
-    display: flex; //Changes directions so dock feels more like a compact list of currently opened apps ~URB!
 
     background: unset; //Removes background colour ~URB!
 
-    &.horizontal {
+    &.vertical[data-size="full-width"] {
 
-        flex-direction: row; justify-content: flex-start; //Sets horizontal direction to always start from the left corner ~URB!
+        .weg-items-center, .weg-items-right {
 
-    }
+            flex: unset !important; //Sets vertical direction to always be at the bottom corner, with docking zones kept working ~URB!
 
-    &.vertical {
+            margin: var(--spacing-2xs) 0 0; //Sets small spacing in-between docking zones ~URB!
 
-        flex-direction: column; justify-content: flex-end; //Sets vertical direction to always start from the bottom corner ~URB!
+            &[data-empty="true"] {
+
+                padding: var(--spacing-xs) 0; //Adds small padding to empty docking zones for easier grab & drop ~URB!
+
+            }
+
+        }
+
+        .weg-items-left {
+
+            justify-content: flex-end !important; //Aligns content of first docking zone always to bottom corner ~URB!
+
+        }
 
     }
 
